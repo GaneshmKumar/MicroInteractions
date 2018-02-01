@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>MicroInteraction (Password Strength Indicator)</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="input_wrapper">
+    <input type="password" id="password_field" name="search" placeholder="Enter your password" />
+  <span id="password-toggle" class="disable">
+  <i class="far fa-eye-slash" onclick="toggle();" ></i></span>
+    <div id="strength_indicator" class="weak">
+      <i class="far fa-smile" id="smile"></i>
+      <i class="far fa-frown show" id="frown"></i>
+      <i class="far fa-meh" id="meh"></i>
+      </div>
+</div>
+  <script src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

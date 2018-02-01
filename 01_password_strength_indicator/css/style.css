@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:700');
+
+body {
+  background: #228AE6;
+}
+
+#input_wrapper{
+   position: relative;
+  top: 40vh;
+   margin: 0px auto;
+  display: block;
+   display: table;
+   border-collapse: separate;
+}
+
+#password_field:focus {
+  outline: none;
+}
+
+#password_field {
+  font-family: 'Dosis';
+    padding-left: 20px;
+    display: table-cell;
+    height: 63px;
+    width: 500px;
+  letter-spacing: 2px;
+  font-size: 22px;
+  color: #414141;
+    border: solid 1px #D1CEC9;
+    border-right-color: transparent;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    
+}
+
+#strength_indicator {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: table-cell;
+    padding: 15px 20px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    left: -2px;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+  transition: ease-in-out 1s;
+}
+
+.weak {
+  background: #ff4436;
+  border-color: #ff4436;
+}
+
+.medium {
+  background: #FFC107;
+  border-color: #FFC107;
+}
+
+.strong {
+  background: #8BC34A;
+  border-color: #8BC34A;
+}
+
+.fa-smile, .fa-meh, .fa-frown {
+  display: none;
+  position: relative;
+  top: 5px;
+}
+
+.show {
+  display: unset;
+}
+
+.fa-eye-slash {
+  position: absolute;
+  right: 90px;
+  top: 25px;
+  font-size: 20px;
+}
+
+.disable {
+color: #D1CEC9;  
+}
+
+.enable {
+  color: #228AE6; 
+}
+.fa-eye-slash:hover {
+  cursor: pointer;
+}
+
+#password-toggle {
+  z-index: 999;
+}
